@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -50,67 +51,84 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .page-break { page-break-before: always; }
 
-@page { size: A4;
-  margin: 20mm;
-  /** theese don't work browsers yet **/
-  @bottom-left { content: counter(page) "/" counter(pages); } }
+html { scroll-behavior: smooth; display: flex; justify-content: center; }
 
-.page-break { page-break-before: always; }
+body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: 'DM Mono', monospace; max-width: 50em; margin: 1em; /** colors **/ color: #000; background-color: #fff; }
 
-h1, h2, h3, h4 { page-break-after: avoid; page-break-inside: avoid; }
+@media screen and (min-width: 768px) { body { margin: 1em 2em; } }
 
-p { page-break-inside: avoid; }
+body .accent { color: #e8b200; }
 
-li, ul { page-break-inside: avoid; page-break-after: avoid; page-break-before: avoid; }
+@media screen and (min-width: 768px) { .mobile { display: none !important; } }
 
-#table-of-contents, #lang-selector, #toolbar { display: none; }
+@media screen and (max-width: 768px) { .desktop { display: none !important; } }
 
-body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: "Abel", sans-serif; /* colors */ color: #000; background-color: #fff; }
+.photo { width: 50%; display: block; }
 
-body .accent { color: #bc412b; }
+@media screen and (min-width: 768px) { .photo { width: 25%; margin: 0; } }
 
-.photo-frame { margin-top: 0; }
+.signature-frame { display: flex; justify-content: flex-end; }
 
-.photo { width: 25%; margin: 0; display: inline-block; }
+.btn-group { display: flex; flex-flow: row wrap; justify-content: space-around; }
 
-p { position: relative; margin: 0 0 1em 28%; /** surtitle **/ /** subtitle **/ line-height: 1.2em; /** consent **/ /** updated **/ /** subtitle (for links) **/ }
+.btn-group .icon-btn { font-size: 2em; }
 
-p::before { content: attr(surtitle); display: block; font-size: 14px; font-weight: 200; text-align: left; font-style: italic; color: #bc412b; }
+#topbar { margin: -1.5em 0 -1em; padding: 0.1em; top: 0; position: sticky; z-index: 1; background-color: #fff; padding-bottom: 0.2em; border-bottom: 4px solid #e8b200; }
 
-p::after { content: attr(subtitle); display: block; font-size: 16px; font-weight: 200; text-align: left; font-style: italic; color: #000; }
+#topbar .photo-frame { display: flex; padding: 0; margin-top: 0.5em; border-top: 2px solid #e8b200; border-bottom: 2px solid #e8b200; }
 
-p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
+@media screen and (min-width: 768px) { #topbar .photo-frame { margin-top: 2em; padding: 1em; } }
 
-p.updated { text-align: right; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
+#topbar .btn-group { justify-content: space-between; flex: 0.25; }
 
-p.subtitle { font-style: italic; font-weight: 200; margin-top: -1.2em; font-size: 16px; font-weight: 200; color: #000; }
+@media screen and (min-width: 768px) { #topbar .btn-group { justify-content: space-around; } }
 
-h1 { font-weight: 400; text-align: right; font-size: 3em; line-height: 1; display: inline-block; width: 74%; }
+#topbar h1 { flex: 1; font-weight: 400; font-size: 2em; line-height: 1; text-align: center; color: #e8b200; }
 
-h2 { position: relative; font-weight: 400; font-size: 1.5em; color: #bc412b; margin-top: 3em; text-align: right; width: 25%; }
+.info { text-align: center; font-weight: 300; font-size: 0.8em; }
 
-h3, h4 { position: relative; margin: 0 0 1em 28%; /** surtitle **/ /** subtitle **/ font-size: 1.5em; font-weight: 400; }
+.info.desktop { border-bottom: 2px solid #e8b200; text-align: center; padding: 0.5em 1em; }
 
-h3::before, h4::before { content: attr(surtitle); display: block; font-size: 14px; font-weight: 200; text-align: left; font-style: italic; color: #bc412b; }
+.info.desktop p { display: inline; }
 
-h3::after, h4::after { content: attr(subtitle); display: block; font-size: 16px; font-weight: 200; text-align: left; font-style: italic; color: #000; }
+.info.desktop p::after { color: #e8b200; font-weight: 500; content: "\00a0\00a0"; text-decoration: line-through; margin-left: 0.2em; margin-right: -0.2em; }
 
-section { margin: 2em 0 2em 3em; }
+.info.desktop p::before { color: #e8b200; font-weight: 500; content: "\00a0\00a0"; text-decoration: line-through; margin-left: -0.5em; margin-right: 0.5em; }
 
-section::before { content: attr(id); text-transform: capitalize; display: block; font-weight: 200; text-align: left; margin: 0 0 1em 28%; font-size: 1.5em; color: #bc412b; }
+#markdown-content { padding-top: 2em; }
 
-ul, ol { margin: 0 0 1em 28%; }
+#markdown-content h2 { font-weight: 400; font-size: 1.5em; height: 4em; color: #e8b200; text-align: center; overflow: hidden; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; grid-gap: 1rem; }
 
-li { margin-left: 1rem; }
+#markdown-content h2:before, #markdown-content h2:after { content: ""; display: block; border-top: 2px solid #e8b200; min-width: 10px; }
 
-li::before { content: '- '; color: #bc412b; font-weight: 600; }
+#markdown-content p { margin: 1em 10%; /** surtitle **/ /** subtitle **/ line-height: 1.2em; /** consent **/ /** updated **/ /** subtitle (for links) **/ }
 
-li > ul, li > ol { margin: 0; }
+#markdown-content p::before { content: attr(surtitle); display: block; font-size: 14px; font-weight: 300; text-align: left; font-style: italic; color: #e8b200; }
 
-li > ul > li, li > ol > li { margin-right: 0; }
+#markdown-content p::after { content: attr(subtitle); display: block; font-size: 16px; font-weight: 300; text-align: left; font-style: italic; color: #000; }
 
-li > ul > li::before, li > ol > li::before { content: '- '; color: #bc412b; font-weight: 600; }
+#markdown-content p.consent { margin-top: 4em; font-style: italic; font-weight: 300; font-size: 16px; font-weight: 300; color: #e8b200; }
+
+#markdown-content p.updated { text-align: right; font-style: italic; font-weight: 300; font-size: 16px; font-weight: 300; color: #e8b200; }
+
+#markdown-content p.subtitle { font-style: italic; font-weight: 300; margin-top: -1.2em; font-size: 16px; font-weight: 300; color: #000; }
+
+#markdown-content h3, #markdown-content h4 { margin: 1em 10%; /** surtitle **/ /** subtitle **/ font-size: 1.5em; font-weight: 500; }
+
+#markdown-content h3::before, #markdown-content h4::before { content: attr(surtitle); display: block; font-size: 14px; font-weight: 300; text-align: left; font-style: italic; color: #e8b200; }
+
+#markdown-content h3::after, #markdown-content h4::after { content: attr(subtitle); display: block; font-size: 16px; font-weight: 300; text-align: left; font-style: italic; color: #000; }
+
+#markdown-content ul, #markdown-content ol { margin: 1em 10%; /** surtitle **/ /** subtitle **/ list-style-type: disc; }
+
+#markdown-content ul::before, #markdown-content ol::before { content: attr(surtitle); display: block; font-size: 14px; font-weight: 300; text-align: left; font-style: italic; color: #e8b200; }
+
+#markdown-content ul::after, #markdown-content ol::after { content: attr(subtitle); display: block; font-size: 16px; font-weight: 300; text-align: left; font-style: italic; color: #000; }
+
+#markdown-content ul > li, #markdown-content ol > li { margin-left: 1em; }
 
 a { color: inherit; text-decoration: none; }
 
-/*# sourceMappingURL=print.css.map */
+a:hover { color: #39f; }
+
+/*# sourceMappingURL=screen.css.map */
