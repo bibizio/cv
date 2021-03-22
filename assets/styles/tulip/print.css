@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -51,79 +50,70 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .page-break { page-break-before: always; }
 
-html { scroll-behavior: smooth; display: flex; justify-content: center; }
+@page { size: A4;
+  margin: 20mm;
+  /** theese don't work browsers yet **/
+  @bottom-left { content: counter(page) "/" counter(pages); } }
 
-body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: 'Abel', sans-serif; max-width: 100em; margin: 1em 2em; /** colors **/ color: #000; background-color: #fff; }
+.page-break { page-break-before: always; }
 
-@media screen and (min-width: 768px) { body { display: grid; grid-template-columns: 1fr 15em; } }
+h1, h2, h3, h4 { page-break-after: avoid; page-break-inside: avoid; }
 
-body .accent { color: #bc412b; }
+p { page-break-inside: avoid; }
 
-.photo-frame { display: flex; justify-content: space-between; flex-flow: column nowrap; align-items: center; margin-top: 3em; }
+li, ul { page-break-inside: avoid; page-break-after: avoid; page-break-before: avoid; }
 
-@media screen and (min-width: 768px) { .photo-frame { align-items: flex-end; flex-flow: row nowrap; margin-top: 0; } }
+#table-of-contents, #topbar, #sidebar { display: none; }
 
-.photo { width: 50%; display: block; }
+body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: "Abel", sans-serif; /* colors */ color: #000; background-color: #fff; }
 
-@media screen and (min-width: 768px) { .photo { width: 25%; margin: 0; } }
+body .accent { color: #3f8ab5; }
 
-.signature-frame { display: flex; justify-content: flex-end; }
+.photo-frame { margin-top: 0; display: inline-block; width: 25%; margin: 0; }
 
-.btn-group { display: flex; flex-flow: row wrap; justify-content: space-around; align-items: center; margin: 0.5em 1em 1em; }
-
-.btn-group .icon-btn { font-size: 2em; }
-
-#topbar { margin: -1.5em -2em -1em; padding: 0.1em; top: 0; position: sticky; z-index: 1; background-color: #fff; border-bottom: 1px solid #bc412b; }
-
-@media screen and (min-width: 768px) { #topbar { display: none; } }
-
-#topbar > .btn-group { justify-content: space-between; margin-bottom: 0.5em; }
-
-#table-of-contents { position: sticky; top: 2rem; align-self: start; padding-left: 0; border-left: 1px solid #bc412b; /* ScrollSpy active styles */ }
-
-@media screen and (max-width: 768px) { #table-of-contents { display: none; } }
-
-#table-of-contents li { margin-left: 1rem; }
-
-#table-of-contents li.active > a { opacity: 1; font-weight: 500; }
-
-#table-of-contents li a { text-decoration: none; display: block; padding: 0.125rem 0; color: #bc412b; opacity: 0.5; transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */ }
-
-#table-of-contents li a:hover, #table-of-contents li a:active { opacity: 1; }
+.photo { width: 100%; }
 
 #markdown-content { font-size: 1.2em; }
 
-#markdown-content p { position: relative; margin-bottom: 1em; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ line-height: 1.2em; /** consent **/ /** updated **/ }
-
-@media screen and (min-width: 768px) { #markdown-content p { position: relative; width: 65%; margin: 0 0 1em 28%; } }
+#markdown-content p { margin: 1em 10%; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ line-height: 1.2em; /** consent **/ /** updated **/ }
 
 #markdown-content p::before, #markdown-content p::after, #markdown-content p.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
 
-#markdown-content p::before { content: attr(surtitle); font-size: 14px; color: #bc412b; }
+#markdown-content p::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
 
 #markdown-content p::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
 #markdown-content p.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
 
-#markdown-content p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
+#markdown-content p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #3f8ab5; }
 
-#markdown-content p.updated { text-align: right; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
+#markdown-content p.updated { text-align: right; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #3f8ab5; }
 
-#markdown-content h1 { font-weight: 400; font-size: 3em; line-height: 1; margin: 1em 0 0 0; text-align: center; }
+#markdown-content h1 { margin: 1em 10%; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ margin: 0; font-weight: 400; text-align: right; font-size: 3em; line-height: 1; display: inline-block; width: 74%; }
 
-@media screen and (min-width: 768px) { #markdown-content h1 { text-align: right; margin: 0 1em 0 0; } }
+#markdown-content h1::before, #markdown-content h1::after, #markdown-content h1.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
 
-#markdown-content h2 { position: relative; font-weight: 400; font-size: 1.5em; color: #bc412b; margin-top: 2em; margin-bottom: 1em; text-align: center; }
+#markdown-content h1::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
 
-@media screen and (min-width: 768px) { #markdown-content h2 { margin-top: 3em; margin-bottom: 0em; text-align: right; width: 25%; } }
+#markdown-content h1::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
-#markdown-content h3, #markdown-content h4 { position: relative; margin-bottom: 1em; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-size: 1.5em; font-weight: 400; }
+#markdown-content h1.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
 
-@media screen and (min-width: 768px) { #markdown-content h3, #markdown-content h4 { position: relative; width: 65%; margin: 0 0 1em 28%; } }
+#markdown-content h2 { margin: 1em 10%; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-weight: 400; font-size: 1.5em; color: #3f8ab5; }
+
+#markdown-content h2::before, #markdown-content h2::after, #markdown-content h2.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
+
+#markdown-content h2::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
+
+#markdown-content h2::after { content: attr(subtitle); font-size: 16px; color: #000; }
+
+#markdown-content h2.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
+
+#markdown-content h3, #markdown-content h4 { margin: 1em 10%; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-size: 1.5em; font-weight: 400; }
 
 #markdown-content h3::before, #markdown-content h3::after, #markdown-content h3.subtitle, #markdown-content h4::before, #markdown-content h4::after, #markdown-content h4.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
 
-#markdown-content h3::before, #markdown-content h4::before { content: attr(surtitle); font-size: 14px; color: #bc412b; }
+#markdown-content h3::before, #markdown-content h4::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
 
 #markdown-content h3::after, #markdown-content h4::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
@@ -131,24 +121,12 @@ body .accent { color: #bc412b; }
 
 #markdown-content section { margin: 2em 0 2em 3em; }
 
-#markdown-content section::before { content: attr(id); text-transform: capitalize; display: block; font-weight: 200; text-align: left; margin: 0 0 1em 28%; font-size: 1.5em; color: #bc412b; }
+#markdown-content section::before { content: attr(id); text-transform: capitalize; display: block; font-weight: 200; text-align: left; margin: 0 0 1em 28%; font-size: 1.5em; color: #3f8ab5; }
 
-#markdown-content ul, #markdown-content ol { margin-bottom: 1em; }
+#markdown-content li { margin: 1em 12%; }
 
-@media screen and (min-width: 768px) { #markdown-content ul, #markdown-content ol { margin-left: 28%; } }
-
-#markdown-content li { margin: 0 2em 0 1em; }
-
-#markdown-content li::marker { content: '- '; color: #bc412b; font-weight: 600; }
-
-#markdown-content li > ul, #markdown-content li > ol { margin: 0; }
-
-#markdown-content li > ul > li, #markdown-content li > ol > li { margin-right: 0; }
-
-#markdown-content li > ul > li::marker, #markdown-content li > ol > li::marker { content: '- '; color: #bc412b; font-weight: 600; }
+#markdown-content li::marker { content: "- "; color: #3f8ab5; font-weight: 600; }
 
 #markdown-content a { color: inherit; text-decoration: none; }
 
-#markdown-content a:hover { color: #39f; }
-
-/*# sourceMappingURL=screen.css.map */
+/*# sourceMappingURL=print.css.map */

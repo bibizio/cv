@@ -53,19 +53,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 html { scroll-behavior: smooth; display: flex; justify-content: center; }
 
-body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: 'Abel', sans-serif; max-width: 100em; margin: 1em 2em; /** colors **/ color: #000; background-color: #fff; }
+body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: "Abel", sans-serif; max-width: 100em; margin: 1em 2em; /** colors **/ color: #000; background-color: #fff; }
 
-@media screen and (min-width: 768px) { body { display: grid; grid-template-columns: 1fr 15em; } }
+@media screen and (min-width: 768px) { body { display: grid; grid-template-columns: 1fr 3fr 15em; } }
 
-body .accent { color: #bc412b; }
-
-.photo-frame { display: flex; justify-content: space-between; flex-flow: column nowrap; align-items: center; margin-top: 3em; }
-
-@media screen and (min-width: 768px) { .photo-frame { align-items: flex-end; flex-flow: row nowrap; margin-top: 0; } }
-
-.photo { width: 50%; display: block; }
-
-@media screen and (min-width: 768px) { .photo { width: 25%; margin: 0; } }
+body .accent { color: #3f8ab5; }
 
 .signature-frame { display: flex; justify-content: flex-end; }
 
@@ -73,13 +65,41 @@ body .accent { color: #bc412b; }
 
 .btn-group .icon-btn { font-size: 2em; }
 
-#topbar { margin: -1.5em -2em -1em; padding: 0.1em; top: 0; position: sticky; z-index: 1; background-color: #fff; border-bottom: 1px solid #bc412b; }
+.photo-frame { text-align: center; }
+
+@media screen and (max-width: 768px) { .photo-frame { margin-top: 2em; } }
+
+#topbar { margin: -1.5em -2em -1em; padding: 0.1em; top: 0; position: sticky; z-index: 1; background-color: #3f8ab5; }
 
 @media screen and (min-width: 768px) { #topbar { display: none; } }
 
 #topbar > .btn-group { justify-content: space-between; margin-bottom: 0.5em; }
 
-#table-of-contents { position: sticky; top: 2rem; align-self: start; padding-left: 0; border-left: 1px solid #bc412b; /* ScrollSpy active styles */ }
+#sidebar { background-color: #3f8ab5; margin: -1em 0 -1em -2em; color: #fff; padding: 1em; }
+
+#sidebar .sidebar-frame { position: sticky; top: 1em; }
+
+#sidebar h2 { display: none; }
+
+#sidebar a { color: #fff; }
+
+#sidebar p { margin: 1em 0; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-size: 1.2em; }
+
+@media screen and (min-width: 768px) { #sidebar p { margin: 1em 10%; } }
+
+#sidebar p::before, #sidebar p::after, #sidebar p.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
+
+#sidebar p::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
+
+#sidebar p::after { content: attr(subtitle); font-size: 16px; color: #000; }
+
+#sidebar p.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
+
+#sidebar p.subtitle, #sidebar p::after, #sidebar p::before { color: #fff; }
+
+@media screen and (max-width: 768px) { #sidebar { display: none; } }
+
+#table-of-contents { position: sticky; top: 2rem; align-self: start; padding-left: 0; border-left: 1px solid #3f8ab5; /* ScrollSpy active styles */ }
 
 @media screen and (max-width: 768px) { #table-of-contents { display: none; } }
 
@@ -87,43 +107,65 @@ body .accent { color: #bc412b; }
 
 #table-of-contents li.active > a { opacity: 1; font-weight: 500; }
 
-#table-of-contents li a { text-decoration: none; display: block; padding: 0.125rem 0; color: #bc412b; opacity: 0.5; transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */ }
+#table-of-contents li a { text-decoration: none; display: block; padding: 0.125rem 0; color: #3f8ab5; opacity: 0.5; transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */ }
 
 #table-of-contents li a:hover, #table-of-contents li a:active { opacity: 1; }
 
 #markdown-content { font-size: 1.2em; }
 
-#markdown-content p { position: relative; margin-bottom: 1em; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ line-height: 1.2em; /** consent **/ /** updated **/ }
+@media screen and (min-width: 768px) { #markdown-content .info-block, #markdown-content .photo-frame { display: none; } }
 
-@media screen and (min-width: 768px) { #markdown-content p { position: relative; width: 65%; margin: 0 0 1em 28%; } }
+#markdown-content p { margin: 1em 0; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ line-height: 1.2em; /** consent **/ /** updated **/ }
+
+@media screen and (min-width: 768px) { #markdown-content p { margin: 1em 10%; } }
 
 #markdown-content p::before, #markdown-content p::after, #markdown-content p.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
 
-#markdown-content p::before { content: attr(surtitle); font-size: 14px; color: #bc412b; }
+#markdown-content p::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
 
 #markdown-content p::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
 #markdown-content p.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
 
-#markdown-content p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
+#markdown-content p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #3f8ab5; }
 
-#markdown-content p.updated { text-align: right; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
+#markdown-content p.updated { text-align: right; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #3f8ab5; }
 
-#markdown-content h1 { font-weight: 400; font-size: 3em; line-height: 1; margin: 1em 0 0 0; text-align: center; }
+#markdown-content h1 { margin: 1em 0; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-weight: 400; font-size: 3em; line-height: 1; margin: 0; text-align: center; }
+
+@media screen and (min-width: 768px) { #markdown-content h1 { margin: 1em 10%; } }
+
+#markdown-content h1::before, #markdown-content h1::after, #markdown-content h1.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
+
+#markdown-content h1::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
+
+#markdown-content h1::after { content: attr(subtitle); font-size: 16px; color: #000; }
+
+#markdown-content h1.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
 
 @media screen and (min-width: 768px) { #markdown-content h1 { text-align: right; margin: 0 1em 0 0; } }
 
-#markdown-content h2 { position: relative; font-weight: 400; font-size: 1.5em; color: #bc412b; margin-top: 2em; margin-bottom: 1em; text-align: center; }
+#markdown-content h2 { margin: 1em 0; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-weight: 400; font-size: 1.5em; color: #3f8ab5; margin-top: 2em; margin-bottom: 1em; text-align: center; }
 
-@media screen and (min-width: 768px) { #markdown-content h2 { margin-top: 3em; margin-bottom: 0em; text-align: right; width: 25%; } }
+@media screen and (min-width: 768px) { #markdown-content h2 { margin: 1em 10%; } }
 
-#markdown-content h3, #markdown-content h4 { position: relative; margin-bottom: 1em; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-size: 1.5em; font-weight: 400; }
+#markdown-content h2::before, #markdown-content h2::after, #markdown-content h2.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
 
-@media screen and (min-width: 768px) { #markdown-content h3, #markdown-content h4 { position: relative; width: 65%; margin: 0 0 1em 28%; } }
+#markdown-content h2::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
+
+#markdown-content h2::after { content: attr(subtitle); font-size: 16px; color: #000; }
+
+#markdown-content h2.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
+
+@media screen and (min-width: 768px) { #markdown-content h2 { margin: 1em 5%; text-align: left; } }
+
+#markdown-content h3, #markdown-content h4 { margin: 1em 0; /** surtitle **/ /** subtitle **/ /** subtitle (for links) **/ font-size: 1.5em; font-weight: 400; }
+
+@media screen and (min-width: 768px) { #markdown-content h3, #markdown-content h4 { margin: 1em 10%; } }
 
 #markdown-content h3::before, #markdown-content h3::after, #markdown-content h3.subtitle, #markdown-content h4::before, #markdown-content h4::after, #markdown-content h4.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
 
-#markdown-content h3::before, #markdown-content h4::before { content: attr(surtitle); font-size: 14px; color: #bc412b; }
+#markdown-content h3::before, #markdown-content h4::before { content: attr(surtitle); font-size: 14px; color: #3f8ab5; }
 
 #markdown-content h3::after, #markdown-content h4::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
@@ -131,21 +173,13 @@ body .accent { color: #bc412b; }
 
 #markdown-content section { margin: 2em 0 2em 3em; }
 
-#markdown-content section::before { content: attr(id); text-transform: capitalize; display: block; font-weight: 200; text-align: left; margin: 0 0 1em 28%; font-size: 1.5em; color: #bc412b; }
+#markdown-content section::before { content: attr(id); text-transform: capitalize; display: block; font-weight: 200; text-align: left; margin: 0 0 1em 28%; font-size: 1.5em; color: #3f8ab5; }
 
-#markdown-content ul, #markdown-content ol { margin-bottom: 1em; }
+#markdown-content li { margin: 1em 4%; }
 
-@media screen and (min-width: 768px) { #markdown-content ul, #markdown-content ol { margin-left: 28%; } }
+@media screen and (min-width: 768px) { #markdown-content li { margin: 1em 12%; } }
 
-#markdown-content li { margin: 0 2em 0 1em; }
-
-#markdown-content li::marker { content: '- '; color: #bc412b; font-weight: 600; }
-
-#markdown-content li > ul, #markdown-content li > ol { margin: 0; }
-
-#markdown-content li > ul > li, #markdown-content li > ol > li { margin-right: 0; }
-
-#markdown-content li > ul > li::marker, #markdown-content li > ol > li::marker { content: '- '; color: #bc412b; font-weight: 600; }
+#markdown-content li::marker { content: "- "; color: #3f8ab5; font-weight: 600; }
 
 #markdown-content a { color: inherit; text-decoration: none; }
 
