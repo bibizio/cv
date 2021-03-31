@@ -4,22 +4,22 @@ First things first: sorry for my English. You may find errors in this file or so
 
 This repo is meant to be a way to mantain my Curriculum Vitae using [markdown](https://www.markdownguide.org/getting-started/) and publish it on [GitHub Pages](https://pages.github.com/) (or somewhere else).
 
-I was inspired by [elipapa markdown-cv](http://elipapa.github.io/markdown-cv/), but decided to write it from scratch to implement different things I needed (mobile responsive, generate a pdf at compile-time and an action to deploy on gh-pages on push, etc).
+I was inspired by [elipapa markdown-cv](http://elipapa.github.io/markdown-cv/), but decided to write it from scratch to implement different things I needed (mobile responsive, generate a pdf at compile-time, an action to deploy on gh-pages on push, etc).
 
 ## Usage
 
 1. fork the repo
-2. create or edit a folder and an _index.md_ file with your cv in it for every language you want to use (the examples folders in my repo are only for showing layouts, delete them if you want)
+2. create or edit a folder, and an _index.md_ file with your cv in it, for every language you want to use (the examples folders in my repo are only for showing layouts, delete them if you want)
 3. chose a layout for your cv
 4. configure the options in **_\_config.yml_** (not every option is available in every layout)
 
-now you can:
+**now you can:**
 
 ### Build your cv locally (this project is written in [Jekyll](https://jekyllrb.com/))
 
 1. Install Ruby, RubyGems and bundler (you can follow [these instructions](https://jekyllrb.com/docs/installation/))
 2. run `bundle install`
-3. run `jekyll serve` to review your cv on http://127.0.0.1:4000/cv or `jekyll build`. Your cv will be generated in the **_\_site_** folder
+3. run `jekyll serve` to review your cv on http://127.0.0.1:4000/cv or `jekyll build`: your cv will be generated in the **_\_site_** folder
 
 ### Publish it on GitHup Pages
 
@@ -31,7 +31,7 @@ Every time you push on the main branch, the workflow will build your cv and publ
 
 You can change the layout of your cv using the name in the [front matter](https://jekyllrb.com/docs/front-matter/) of **_every_** index.md file.
 
-The _title_ of the file should be you name (it will be used for the PDF filename also).
+The _title_ of the file should be you name (it is also used to form the PDF filename).
 
 I created a couple more layouts for fun (and I probably will improve them)¸ but I'm not a Web Designer...
 
@@ -43,7 +43,7 @@ They're still work in progress for now, but feel free to [contribute](CONTRIBUTI
 
 ### Layouts options
 
-There are a set of oprions (mainly colours) that you can use in **_\_config.yml_** to change the defaults:
+There are a set of options (mainly colours) that you can use in **_\_config.yml_** to change the defaults:
 
 ```yml
 cv:
@@ -58,7 +58,7 @@ cv:
   full-topbar:
 ```
 
-the _languages_ options is an array containing the code of the languages used in the cv (the first language will be the default)
+the _languages_ options is an array containing the codes of the languages (the first language will be the default)
 
 _full-topbar_ is used only in [magnolia](https://bibizio.github.io/cv) mobile version.
 
@@ -66,13 +66,13 @@ _full-topbar_ is used only in [magnolia](https://bibizio.github.io/cv) mobile ve
 
 For the layouts I wrote, there are a couple of helpful css rules (using [kramdown block attributes](https://kramdown.gettalong.org/quickref.html#block-attributes)):
 
-- for p, h2, h3 and h4, you can use `{:surtitle="this is a surtitle" subtitle="this is a subtitle"}` right before the line. It will add _this is a surtitle_ as surtitle and _this is a subtitle_ as subtitle.
+- for p, h2, h3 and h4, you can use `{:surtitle="this is a surtitle" subtitle="this is a subtitle"}` right before the line. It will add **_this is a surtitle_** as surtitle and **_this is a subtitle_** as subtitle.
 
-- in case of links in subtitles, the previous method doen't work, so you need to add a paragraph with the `{:.subtitle}` class.
+- in case of links in subtitles, the previous method doesn't work, so you need to add a paragraph with the `{:.subtitle}` class.
 
 - in case you need to force a page-break in the pdf, you can use the `{:.page-break}` class before the line you want to appear as the first one of the new page
 
-- you can surround part of the text in a section using the section block (I used it for indentation of text)
+- you can surround part of the text in a section using the section block (I used it for indentations)
 
   ```markdown
   {% section my-section-id %}
@@ -90,7 +90,7 @@ For the layouts I wrote, there are a couple of helpful css rules (using [kramdow
   </section>
   ```
 
-- some layouts use [jekyll-contentblocks](https://github.com/rustygeldmacher/jekyll-contentblocks) for the _personal information_ content of the cv marked as _info_. You can use it like this:
+- some layouts use [jekyll-contentblocks](https://github.com/rustygeldmacher/jekyll-contentblocks) for the _personal information_ content of the cv (marked as _info_). You can use it like this:
 
   ```markdown
   {% contentfor info %}
@@ -122,9 +122,9 @@ If it still doesn't show after doing so, that means that either the svg filename
 Every layout has a print media CSS so it can be easily printed via browser native functionality.
 However I wanted the PDF to be statically generated at compile time, so I wrote a Jekyll plugin to do so.
 
-That said, there are a few things to keep in mind about it:
+That said, there are a few things to keep in mind:
 
-- There are not so many tools for doing this in Ruby. I used [wiked_pdf](https://github.com/mileszs/wicked_pdf), a wrapper for the [wkhtmltopdf](https://wkhtmltopdf.org/) linux utility. It uses quite an old Qt library, so a lot of CSS rules just don't work.
+- There are not so many tools for doing this in Ruby: I used [wiked_pdf](https://github.com/mileszs/wicked_pdf), a wrapper for the [wkhtmltopdf](https://wkhtmltopdf.org/) linux utility. It uses quite an old Qt library, so a lot of CSS rules just don't work.
 - CSS [@Page](https://developer.mozilla.org/en-US/docs/Web/CSS/@page) rule is not fully supported by any browser.
-- Not every layout I wrote support this functionality (for now at least).
+- Not every layout I wrote support this functionality (for now, at least).
 - I never wrote code in Ruby before: the plugin is simple, but I'm sure it can be improved.
