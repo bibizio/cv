@@ -32,24 +32,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 /** pdf icon*/
 .pdf-icon { background-image: url("../../svg/pdf-icon.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.pdf-icon:before { content: "\00a0"; }
-
 /** flag icons**/
 .flag-it { background-image: url("../../svg/it.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.flag-it:before { content: "\00a0"; }
-
 .flag-en { background-image: url("../../svg/en.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
-
-.flag-en:before { content: "\00a0"; }
 
 .flag-fr { background-image: url("../../svg/fr.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.flag-fr:before { content: "\00a0"; }
-
 .flag-es { background-image: url("../../svg/es.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
-
-.flag-es:before { content: "\00a0"; }
 
 @page { size: A4;
   margin: 20mm;

@@ -32,24 +32,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 /** pdf icon*/
 .pdf-icon { background-image: url("../../svg/pdf-icon.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.pdf-icon:before { content: "\00a0"; }
-
 /** flag icons**/
 .flag-it { background-image: url("../../svg/it.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.flag-it:before { content: "\00a0"; }
-
 .flag-en { background-image: url("../../svg/en.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
-
-.flag-en:before { content: "\00a0"; }
 
 .flag-fr { background-image: url("../../svg/fr.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.flag-fr:before { content: "\00a0"; }
-
 .flag-es { background-image: url("../../svg/es.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
-
-.flag-es:before { content: "\00a0"; }
 
 @page { size: A4;
   margin: 20mm;
@@ -84,7 +74,7 @@ p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16
 
 p.updated { text-align: right; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
 
-p.subtitle { font-style: italic; font-weight: 200; margin-top: -1.2em; font-size: 16px; font-weight: 200; color: #000; }
+p.subtitle { font-style: italic; font-weight: 200; margin-top: -1.5em; font-size: 16px; font-weight: 200; color: #000; }
 
 h1 { font-weight: 400; text-align: right; font-size: 3em; line-height: 1; display: inline-block; width: 74%; }
 

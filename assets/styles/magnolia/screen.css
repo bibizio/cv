@@ -33,24 +33,14 @@ table { border-collapse: collapse; border-spacing: 0; }
 /** pdf icon*/
 .pdf-icon { background-image: url("../../svg/pdf-icon.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.pdf-icon:before { content: "\00a0"; }
-
 /** flag icons**/
 .flag-it { background-image: url("../../svg/it.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.flag-it:before { content: "\00a0"; }
-
 .flag-en { background-image: url("../../svg/en.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
-
-.flag-en:before { content: "\00a0"; }
 
 .flag-fr { background-image: url("../../svg/fr.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
 
-.flag-fr:before { content: "\00a0"; }
-
 .flag-es { background-image: url("../../svg/es.svg"); background-size: contain; background-repeat: no-repeat; background-color: inherit; height: 2rem; width: 2rem; }
-
-.flag-es:before { content: "\00a0"; }
 
 html { scroll-behavior: smooth; display: flex; justify-content: center; }
 
@@ -96,13 +86,15 @@ body .accent { color: #bc412b; }
 
 @media screen and (min-width: 768px) { #markdown-content p { position: relative; width: 65%; margin: 0 0 1em 28%; } }
 
-#markdown-content p::before, #markdown-content p::after, #markdown-content p.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
+#markdown-content p::before, #markdown-content p::after, #markdown-content p.subtitle, #markdown-content p.surtitle { display: block; font-weight: 200; text-align: left; font-style: italic; line-height: 1.5rem; }
 
 #markdown-content p::before { content: attr(surtitle); font-size: 14px; color: #bc412b; }
 
 #markdown-content p::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
-#markdown-content p.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
+#markdown-content p.subtitle { margin-top: -1.5em; font-size: 16px; color: #000; }
+
+#markdown-content p.surtitle { margin-bottom: 0; font-size: 14px; color: #bc412b; }
 
 #markdown-content p.consent { margin-top: 4em; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; color: #bc412b; }
 
@@ -120,13 +112,15 @@ body .accent { color: #bc412b; }
 
 @media screen and (min-width: 768px) { #markdown-content h3, #markdown-content h4 { position: relative; width: 65%; margin: 0 0 1em 28%; } }
 
-#markdown-content h3::before, #markdown-content h3::after, #markdown-content h3.subtitle, #markdown-content h4::before, #markdown-content h4::after, #markdown-content h4.subtitle { display: block; font-weight: 200; text-align: left; font-style: italic; }
+#markdown-content h3::before, #markdown-content h3::after, #markdown-content h3.subtitle, #markdown-content h3.surtitle, #markdown-content h4::before, #markdown-content h4::after, #markdown-content h4.subtitle, #markdown-content h4.surtitle { display: block; font-weight: 200; text-align: left; font-style: italic; line-height: 1.5rem; }
 
 #markdown-content h3::before, #markdown-content h4::before { content: attr(surtitle); font-size: 14px; color: #bc412b; }
 
 #markdown-content h3::after, #markdown-content h4::after { content: attr(subtitle); font-size: 16px; color: #000; }
 
-#markdown-content h3.subtitle, #markdown-content h4.subtitle { margin-top: -1.2em; padding-left: 1em; font-size: 16px; color: #000; }
+#markdown-content h3.subtitle, #markdown-content h4.subtitle { margin-top: -1.5em; font-size: 16px; color: #000; }
+
+#markdown-content h3.surtitle, #markdown-content h4.surtitle { margin-bottom: 0; font-size: 14px; color: #bc412b; }
 
 #markdown-content section { margin: 2em 0 2em 3em; }
 
@@ -140,14 +134,12 @@ body .accent { color: #bc412b; }
 
 #markdown-content li::marker { content: '- '; color: #bc412b; font-weight: 600; }
 
-#markdown-content li > ul, #markdown-content li > ol { margin: 0; }
+#markdown-content li ul, #markdown-content li ol { margin: 0; }
 
-#markdown-content li > ul > li, #markdown-content li > ol > li { margin-right: 0; }
+#markdown-content li ul li, #markdown-content li ol li { margin-right: 0; }
 
-#markdown-content li > ul > li::marker, #markdown-content li > ol > li::marker { content: '- '; color: #bc412b; font-weight: 600; }
+#markdown-content a { color: inherit; }
 
-#markdown-content a { color: inherit; text-decoration: none; }
-
-#markdown-content a:hover { color: #39f; }
+#markdown-content a:hover { color: #bc412b; text-decoration: none; }
 
 /*# sourceMappingURL=screen.css.map */
