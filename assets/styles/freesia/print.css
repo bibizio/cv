@@ -55,7 +55,7 @@ p { page-break-inside: avoid; }
 
 li, ul { page-break-inside: avoid; page-break-after: avoid; page-break-before: avoid; }
 
-.mobile, .btn-group { display: none; }
+.mobile, .btn-group, .made-with { display: none; }
 
 body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; margin: 0; font-family: 'DM Mono', monospace; /* colors */ color: #000; background-color: #fff; }
 

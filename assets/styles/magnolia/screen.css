@@ -142,4 +142,6 @@ body .accent { color: #bc412b; }
 
 #markdown-content a:hover { color: #bc412b; text-decoration: none; }
 
+.made-with { margin-top: 2em; text-align: center; font-style: italic; font-weight: 200; font-size: 16px; font-weight: 200; }
+
 /*# sourceMappingURL=screen.css.map */

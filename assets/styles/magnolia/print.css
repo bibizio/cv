@@ -54,7 +54,7 @@ p { page-break-inside: avoid; }
 
 li, ul { page-break-inside: avoid; page-break-after: avoid; page-break-before: avoid; }
 
-#table-of-contents, #lang-selector, #topbar { display: none; }
+#table-of-contents, #lang-selector, #topbar, .made-with { display: none; }
 
 body { font-style: normal; font-weight: 400; font-size: 100%; line-height: 1.5em; font-family: "Abel", sans-serif; /* colors */ color: #000; background-color: #fff; }
 
