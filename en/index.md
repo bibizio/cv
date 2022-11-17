@@ -72,6 +72,10 @@ Github repository for writing in markdown and publish on Github Pages your curri
 
 ## Certifications
 
+{:surtitle="November 2022"}
+
+[Confluent Certified Developer for Apache Kafka](https://www.credential.net/f1a2ccdf-ad8a-443c-9856-1c7d58503f0d){:target='\_blank'}
+
 {:surtitle="February 2022"}
 
 [Red Hat Certified Specialist in Event-Driven Application Development](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ3X24IDK3QSZJBTVRRM7YVWCBA4LHOTDBFCJN4RUVIZUN2NSCACUSQ=){:target='\_blank'}
