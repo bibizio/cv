@@ -72,25 +72,29 @@ Repository Github per scrivere in markdown e pubblicare su Github Pages il propr
 
 ## Certificazioni
 
+{:surtitle="Gennaio 2023"}
+
+[Red Hat® Certified Specialist in Containers](https://www.credly.com/earner/earned/badge/b7dc848c-a3ec-460d-b198-cdf457438bee){:target='\_blank'}
+
 {:surtitle="Novembre 2022"}
 
 [Confluent Certified Developer for Apache Kafka](https://www.credential.net/f1a2ccdf-ad8a-443c-9856-1c7d58503f0d){:target='\_blank'}
 
 {:surtitle="Febbraio 2022"}
 
-[Red Hat Certified Specialist in Event-Driven Application Development](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ3X24IDK3QSZJBTVRRM7YVWCBA4LHOTDBFCJN4RUVIZUN2NSCACUSQ=){:target='\_blank'}
+[Red Hat® Certified Specialist in Event-Driven Application Development](https://www.credly.com/badges/c8eb9945-5935-4bbd-8196-8c447bb3d700){:target='\_blank'}
 
 {:surtitle="Gennaio 2022"}
 
-[Red Hat Certified Cloud-native Developer](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ33DOYCYC37B2IAWB4Y65IONGYDQ4U5NQYTCNA62RUWOCM34WWBUYQ=){:target='\_blank'}
+[Red Hat® Certified Cloud-native Developer](https://www.credly.com/badges/e1e510a1-1478-4770-84b0-a70fca68a818){:target='\_blank'}
 
 {:surtitle="Gennaio 2022"}
 
-[Red Hat Certified Enterprise Application Developer](https://rhtapps.redhat.com/certifications/badge/verify/FMS5RTXOG74SVLAAKANM3GRV64AEQU3CUPSQX2KSDXT6RW46LQ3TDKGZ4OQQD6K2ZRZ7NYKH5QQYM4U5NQYTCNA62RUWOCM34WWBUYQ=){:target='\_blank'}
+[Red Hat® Certified Enterprise Application Developer](https://www.credly.com/badges/f43cfbd1-e9ef-48df-bdbb-97712b7a7369){:target='\_blank'}
 
 {:surtitle="Ottobre 2021"}
 
-[GitLab Certified Associate](https://gitlab.badgr.com/public/assertions/gxAz071nR06hjySg1_2wlA){:target='\_blank'}
+[GitLab Certified Associate](https://www.credly.com/badges/7396b20f-b67a-4438-8d1e-483d809081ee){:target='\_blank'}
 
 {:surtitle="Luglio 2021"}
 
