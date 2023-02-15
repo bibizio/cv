@@ -74,6 +74,10 @@ Repository Github per scrivere in markdown e pubblicare su Github Pages il propr
 
 {:surtitle="Febbraio 2023"}
 
+[Red Hat® Certified Specialist in Building Resilient Microservices](https://www.credly.com/earner/earned/badge/cf56edbc-23e5-40fd-80f9-d024968d1f60){:target='\_blank'}
+
+{:surtitle="Febbraio 2023"}
+
 [Red Hat® Certified Specialist in OpenShift Application Development](https://www.credly.com/earner/earned/badge/25f6f9a8-8e6a-47d2-9ef4-9606b7ff4bd0){:target='\_blank'}
 
 {:surtitle="Gennaio 2023"}
