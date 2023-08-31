@@ -72,6 +72,14 @@ Github repository for writing in markdown and publish on Github Pages your curri
 
 ## Certifications
 
+{:surtitle="August 2023"}
+
+[Red Hat® Certified Architect in Enterprise Applications](https://www.credly.com/earner/earned/badge/02c19978-b0c0-4bea-a94f-d631846c3243){:target='\_blank'}
+
+{:surtitle="August 2023"}
+
+[Red Hat® Certified Specialist in Cloud-native Integration](https://www.credly.com/earner/earned/badge/dbd6db2b-1ca0-4364-affe-3c5ab7c9cf66){:target='\_blank'}
+
 {:surtitle="February 2023"}
 
 [Red Hat® Certified Specialist in Building Resilient Microservices](https://www.credly.com/earner/earned/badge/cf56edbc-23e5-40fd-80f9-d024968d1f60){:target='\_blank'}
@@ -123,10 +131,6 @@ Github repository for writing in markdown and publish on Github Pages your curri
 {:.page-break}
 
 ## Education and qualifications
-
-{:surtitle="2020 – oggi"}
-
-Information Engineering student in University of “La Sapienza”, Rome
 
 {:surtitle="Ottobre 2018"}
 
