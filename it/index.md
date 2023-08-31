@@ -72,6 +72,14 @@ Repository Github per scrivere in markdown e pubblicare su Github Pages il propr
 
 ## Certificazioni
 
+{:surtitle="Agosto 2023"}
+
+[Red Hat® Certified Architect in Enterprise Applications](https://www.credly.com/earner/earned/badge/02c19978-b0c0-4bea-a94f-d631846c3243){:target='\_blank'}
+
+{:surtitle="Agosto 2023"}
+
+[Red Hat® Certified Specialist in Cloud-native Integration](https://www.credly.com/earner/earned/badge/dbd6db2b-1ca0-4364-affe-3c5ab7c9cf66){:target='\_blank'}
+
 {:surtitle="Febbraio 2023"}
 
 [Red Hat® Certified Specialist in Building Resilient Microservices](https://www.credly.com/earner/earned/badge/cf56edbc-23e5-40fd-80f9-d024968d1f60){:target='\_blank'}
@@ -120,19 +128,15 @@ Repository Github per scrivere in markdown e pubblicare su Github Pages il propr
 
 [Scrum Fundamentals Certified](https://www.scrumstudy.com/certification/verify?type=SFC&number=789421){:target='\_blank'}
 
+{:.page-break}
+
 ## Titoli di studio
 
 {:surtitle="2008"}
 
 Maturità Scientifica
 
-{:.page-break}
-
 ## Istruzione e formazione
-
-{:surtitle="2020 – oggi"}
-
-Iscritto alla facoltà di Ingegneria dell’informazione dell'università “La Sapienza” di Roma
 
 {:surtitle="Ottobre 2018"}
 
