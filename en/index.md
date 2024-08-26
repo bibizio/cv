@@ -25,7 +25,14 @@ Italian
 
 ## Professional Experiences
 
-{:surtitle="September 2021 – today"}
+{:surtitle="June 2024 – today"}
+
+### Tech Architecture Assoc Manager
+
+{:.subtitle}
+[Accenture](https://www.accenture.com/){:target='\_blank'}, Rome
+
+{:surtitle="September 2021 – May 2024"}
 
 ### Technology Architect Delivery Specialist
 

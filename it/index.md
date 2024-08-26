@@ -25,14 +25,21 @@ Italiana
 
 ## Esperienza Professionale
 
-{:surtitle="Settembre 2021 – ad oggi"}
+{:surtitle="Giugno 2024 – oggi"}
+
+### Tech Architecture Assoc Manager
+
+{:.subtitle}
+[Accenture](https://www.accenture.com/){:target='\_blank'}, Rome
+
+{:surtitle="Settembre 2021 – Maggio 2024"}
 
 ### Technology Architect Delivery Specialist
 
 {:.subtitle}
 [Accenture](https://www.accenture.com/){:target='\_blank'}, Roma
 
-{:surtitle="novembre 2018 – Agosto 2021"}
+{:surtitle="Novembre 2018 – Agosto 2021"}
 
 ### Software Developer
 
