@@ -68,7 +68,7 @@ Main projects:
 - Mappe conoscitive fornitori/amministrazioni - CONSIP (Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS)
 - Cruscotto FSE - SOGEI (Java 11, JavaScript, d3.js, Tomcat)
 - Conti Correnti Valute Tesoro - MEF (Spring, Spring Boot, Spring Batch, Spring Data, Spring MVC)
-{:.page-break}
+
 {:surtitle="2017 – 2018" subtitle='“Scuola di Musica di Ferentino”, Ferentino (FR)'}
 
 ### Singing Teacher
@@ -230,13 +230,7 @@ A, B
 
 ## Interests
 
-Literature
-
-Cinema
-
-Comics
-
-Videogames
+Literature, Cinema, Comics, Videogames
 
 {:.updated}
 updated {{ page.last_modified_at | date: '%d-%m-%Y'}}
