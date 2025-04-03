@@ -32,6 +32,16 @@ Italiana
 {:.subtitle}
 [Accenture](https://www.accenture.com/){:target='\_blank'}, Rome
 
+Referente tecnico team front-end per la progettazione e implementazione di applicazioni web e librerie di componenti UI.
+
+Principali tecnologie utilizzate:
+
+- [Svelte](https://svelte.dev){:target='\_blank'}
+- [Astro](https://astro.build){:target='\_blank'}
+- [Tailwind CSS](https://tailwindcss.com){:target='\_blank'}
+- [Storybook](https://storybook.js.org){:target='\_blank'}
+- [Express](https://expressjs.com){:target='\_blank'}
+
 {:surtitle="Settembre 2021 – Maggio 2024"}
 
 ### Technology Architect Delivery Specialist
@@ -200,7 +210,7 @@ Padronanza dei principi della programmazione ad oggetti e funzionale
 Esperienza in ambito lavorativo di progettazione, realizzazione e gestione di sistemi basati sulle seguenti tecnologie
 
 - Java (Java EE, Spring)
-- JavaScript/TypeScript (Angular, React, Gatsby, Express, Koa)
+- JavaScript/TypeScript (Angular, React, Svelte, Astro, Gatsby, Express, Koa)
 - Oracle DBMS, MySql, MongoDB
 - Tomcat, WebLogic, JBoss
 - Kafka

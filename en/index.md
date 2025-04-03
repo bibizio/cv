@@ -32,6 +32,16 @@ Italian
 {:.subtitle}
 [Accenture](https://www.accenture.com/){:target='\_blank'}, Rome
 
+Technical Lead of the front-end team for the design and implementation of web applications and UI components libraries.
+
+Main technologies:
+
+- [Svelte](https://svelte.dev){:target='\_blank'}
+- [Astro](https://astro.build){:target='\_blank'}
+- [Tailwind CSS](https://tailwindcss.com){:target='\_blank'}
+- [Storybook](https://storybook.js.org){:target='\_blank'}
+- [Express](https://expressjs.com){:target='\_blank'}
+
 {:surtitle="September 2021 – May 2024"}
 
 ### Technology Architect Delivery Specialist
@@ -190,7 +200,7 @@ Strong knowledge of functional and object oriented programming paradigms.
 Daily working experience designing, implementing and managing projects in:
 
 - Java (Java EE, Spring)
-- JavaScript/TypeScript (Angular, React, Gatsby, Express, Koa)
+- JavaScript/TypeScript (Angular, React, Svelte, Astro, Gatsby, Express, Koa)
 - Oracle DBMS, MySql, MongoDB
 - Tomcat, WebLogic, JBoss
 - Kafka
