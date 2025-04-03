@@ -51,6 +51,8 @@ Principali tecnologie utilizzate:
 
 {:surtitle="Novembre 2018 – Agosto 2021"}
 
+{:.page-break}
+
 ### Software Developer
 
 {:.subtitle}
@@ -66,8 +68,6 @@ Principali progetti:
 - Mappe conoscitive fornitori/amministrazioni - CONSIP (Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS)
 - Cruscotto FSE - SOGEI (Java 11, JavaScript, d3.js, Tomcat)
 - Conti Correnti Valute Tesoro - MEF (Spring, Spring Boot, Spring Batch, Spring Data, Spring MVC)
-
-{:.page-break}
 
 {:surtitle="2017 – 2018" subtitle='“Scuola di Musica di Ferentino”, Ferentino (FR)'}
 
@@ -86,6 +86,8 @@ Libreria UI per la creazione di finestre modali configurabili in [Svelte](https:
 ### [cv](https://github.com/bibizio/cv){:target='\_blank'}
 
 Repository Github per scrivere in markdown e pubblicare su Github Pages il proprio curriculum vitae.
+
+{:.page-break}
 
 ## Certificazioni
 
@@ -145,8 +147,6 @@ Repository Github per scrivere in markdown e pubblicare su Github Pages il propr
 
 [Scrum Fundamentals Certified](https://www.scrumstudy.com/certification/verify?type=SFC&number=789421){:target='\_blank'}
 
-{:.page-break}
-
 ## Titoli di studio
 
 {:surtitle="2008"}
@@ -175,6 +175,8 @@ Corsi di teatro amatoriale e semi-professionali presso la scuola “Teatroavista
 
 Scout e in seguito Aiuto Capo presso il gruppo scout “AGESCI SORA 1” di Sora (FR)
 
+{:.page-break}
+
 ## Lingue
 
 Italiano – lingua madre
@@ -200,8 +202,6 @@ Ottime competenze organizzative sviluppate come aiuto capo scout con gruppi di p
 Capacità decisionali affinate come arbitro ufficiale di pallacanestro Under-15.
 
 Propensione al lavoro di gruppo e alla risoluzione tempestiva dei problemi affinata durante la pluriennale esperienza di scout e come capo squadriglia (team di 7 ragazzi)
-
-{:.page-break}
 
 ## Competenze digitali
 

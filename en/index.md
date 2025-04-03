@@ -51,6 +51,8 @@ Main technologies:
 
 {:surtitle="November 2018 – August 2021"}
 
+{:.page-break}
+
 ### Software Developer
 
 {:.subtitle}
@@ -66,9 +68,7 @@ Main projects:
 - Mappe conoscitive fornitori/amministrazioni - CONSIP (Java 11, JavaScript, Jquery, Chart.js, Tomcat, Oracle DBMS)
 - Cruscotto FSE - SOGEI (Java 11, JavaScript, d3.js, Tomcat)
 - Conti Correnti Valute Tesoro - MEF (Spring, Spring Boot, Spring Batch, Spring Data, Spring MVC)
-
 {:.page-break}
-
 {:surtitle="2017 – 2018" subtitle='“Scuola di Musica di Ferentino”, Ferentino (FR)'}
 
 ### Singing Teacher
@@ -86,6 +86,8 @@ UI library written in svelte for creating configurable modals in [Svelte](https:
 ### [cv](https://github.com/bibizio/cv){:target='\_blank'}
 
 Github repository for writing in markdown and publish on Github Pages your curriculum vitae.
+
+{:.page-break}
 
 ## Certifications
 
@@ -145,8 +147,6 @@ Github repository for writing in markdown and publish on Github Pages your curri
 
 [Scrum Fundamentals Certified](https://www.scrumstudy.com/certification/verify?type=SFC&number=789421){:target='\_blank'}
 
-{:.page-break}
-
 ## Education and qualifications
 
 {:surtitle="Ottobre 2018"}
@@ -173,6 +173,8 @@ High School Diploma
 
 Scout and later Scout Leader of the “AGESCI SORA 1” Scouting group in Sora (FR)
 
+{:.page-break}
+
 ## Languages
 
 Italian – native
@@ -190,8 +192,6 @@ Problem solving and relational skills acquired in scouting experiences.
 Teamwork experience acquired playing basketball in Sora (FR) Under-17 team.
 
 Decisional skills acquired as Under-15 basketball referee.
-
-{:.page-break}
 
 ## Digital skills
 
